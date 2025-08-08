@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Verma</title>
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body class="bg-neutral-950 text-neutral-200 ">
+  <body class="bg-neutral-950 text-neutral-200">
     <nav
       class="flex items-center justify-between p-4 px-10 h-[10vh] w-1/2 m-auto fixed left-0 right-0 bg-background/80 backdrop-blur-md outline rounded-4xl mt-4"
     >
@@ -64,31 +64,71 @@
           <img
             src="./assets/me.png"
             alt="Aman Verma"
-            class="rounded-full h-75 object-cover shadow-lg"
+            class="rounded-full h-80 object-cover shadow-lg"
           />
         </div>
         <div class="w-[35vw] gap-4 flex flex-col">
           <h1 class="text-2xl font-bold">Hello, I'm Aman! 👋</h1>
           <p class="text-gray-400">
-            My name is Aman Verma, a high school sophomore from Lucknow, India, who is passionate about building websites and apps. I’ve been coding for over three years, starting with the basics and now working on full-stack projects that emphasize clean code and responsive design. I’m constantly learning new technologies to stay ahead and improve the quality of my work.
+            My name is Aman Verma, a 16 year old from Lucknow, India, who is
+            passionate about building websites and apps. I've been coding for
+            over three years, starting with the basics and now working on
+            full-stack projects that emphasize clean code and responsive design.
+            I'm constantly learning new technologies to stay ahead and improve
+            the quality of my work.
           </p>
           <p class="text-gray-400">
-            I’m motivated by creating real-world solutions and collaborating with others to build functional, user-friendly applications. My current focus is on developing my skills in React, backend technologies, and modern web development practices. I’m eager to take on freelancing opportunities and continue growing as a developer through hands-on projects.
+            I'm motivated by creating real-world solutions and collaborating
+            with others to build functional, user-friendly applications. My
+            current focus is on developing my skills in React, backend
+            technologies, and modern web development practices. I'm eager to
+            take on freelancing opportunities and continue growing as a
+            developer through hands-on projects.
           </p>
         </div>
       </div>
     </section>
     <section id="projects" class="h-screen flex items-center flex-col gap-10">
       <h1 class="text-4xl font-bold">My Projects</h1>
-      <div class="grid grid-cols-2 grid-rows-4 gap-6 w-[70vw]">
+      <div
+        class="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-4 gap-6 w-[70vw]"
+      >
         <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
-          <img src="" alt="" />
-          <h2 class="text-xl font-semibold">Project 1</h2>
-          <p class="text-gray-400">Description of project 1.</p>
+          <img src="" alt="Chat Hive Preview" class="h-40" />
+          <h2 class="text-xl font-semibold">Chat Hive</h2>
+          <p class="text-gray-400">
+            ChatHive is a full-stack real-time chat and file-sharing web app
+            designed with a sleek dark-themed UI with another dev(I built the
+            frontend) and built using HTML, Tailwind CSS, and JavaScript.
+          </p>
+          <div class="flex gap-2 mt-2">
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">HTML</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">Tailwind CSS</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">JavaScript</p>
+          </div>
+          <div class="flex justify-around items-center gap-4 mt-4">
+            <a
+              href=""
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/live-demo.svg" alt="" />
+                <p class="text-sm text-gray-400">View Project</p>
+              </button>
+            </a>
+            <a
+              href=""
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <p class="text-sm text-gray-400">Github</p>
+              </button>
+            </a>
+          </div>
         </div>
         <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
           <img src="" alt="" />
-          <h2 class="text-xl font-semibold">Project 2</h2>
+          <h2 class="text-xl font-semibold">Tic T</h2>
           <p class="text-gray-400">Description of project 2.</p>
         </div>
         <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
@@ -108,6 +148,6 @@
     <footer class="h-20 flex items-center justify-center">
       <p class="text-gray-400">© 2024 Aman Verma. All rights reserved.</p>
     </footer>
-   <script src="./src/main.js"></script>
+    <script src="./src/main.js"></script>
   </body>
 </html>

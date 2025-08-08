@@ -1,7 +1,6 @@
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll("nav > div:nth-child(2) a");
 
-
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
