@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", sans-serif;
+}
+p, a, li, span {
+    font-family: "Inter", sans-serif;
+}
+
+.nav-active {
+    @apply text-neutral-200 underline underline-offset-4 decoration-2;
+  }
+  
