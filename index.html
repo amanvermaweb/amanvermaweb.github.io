@@ -1,80 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aman Verma</title>
-    <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body class="bg-neutral-950 text-neutral-200 font-sans transition-all duration-300 scroll-smooth">
+  <body class="bg-neutral-950 text-neutral-200 ">
     <nav
-      class="flex items-center justify-between p-4 px-10 h-[10vh] fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${ isScrolled ? 'bg-background/80 backdrop-blur-lg border-b border-border' : 'bg-transparent' }"
+      class="flex items-center justify-between p-4 px-10 h-[10vh] w-1/2 m-auto fixed left-0 right-0 bg-background/80 backdrop-blur-md outline rounded-4xl mt-4"
     >
       <div class="text-2xl font-bold"><p>Aman Verma</p></div>
-      <div class="hidden md:flex space-x-4 text-gray-400">
+      <div class="nav-link hidden md:flex space-x-4 text-gray-400">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact"> Contact</a>
       </div>
     </nav>
-    <section id="about" class="h-screen flex items-center justify-center">
+    <section id="home" class="h-screen flex items-center justify-center">
       <div
         class="flex flex-col items-center justify-center gap-2 text-center p-4 md:w-[55vw]"
       >
-        <h1 class="text-7xl md:text-9xl">Aman Verma</h1>
-        <h1 class="text-3xl">
+        <h1 id="title" class="text-7xl md:text-9xl font-bold">Aman Verma</h1>
+        <h1 class="text-3xl font-semibold">
           Class 10th Student | Aspiring Web Developer | Coding with Curiosity
           and Passion
         </h1>
-        <p>
+        <p class="font-medium">
           Passionate about creating beautiful, functional web experiences that
           make a difference. I blend creativity with code to build digital
           solutions that users love and businesses need.
         </p>
-        <div class="flex gap-4 mt-4">
-          <button class="bg-neutral-200 text-neutral-950 p-2 rounded-xl cursor-pointer">
+        <div class="flex gap-6 mt-4">
+          <button
+            class="bg-neutral-200 text-neutral-950 p-2.5 rounded-xl cursor-pointer"
+          >
             Download Resume/CV
           </button>
-          <button class="p-2 rounded-xl bg-[#181818] outline cursor-pointer">
-            <div>
-              <a href="#contact"> Contact Me</a>
-            </div>
-          </button>
+          <a href="#contact">
+            <button
+              class="p-2.5 rounded-xl bg-[#181818] outline cursor-pointer"
+            >
+              Contact Me
+            </button>
+          </a>
         </div>
       </div>
     </section>
-    <section id="projects" class="h-screen">projects</section>
+    <section
+      id="about"
+      class="h-screen flex items-center justify-center flex-col gap-10"
+    >
+      <h1 class="text-4xl font-bold">About Me</h1>
+      <div class="flex w-[70vw] justify-around">
+        <div class="w-[35vw]">
+          <img
+            src="./assets/me.png"
+            alt="Aman Verma"
+            class="rounded-full h-75 object-cover shadow-lg"
+          />
+        </div>
+        <div class="w-[35vw] gap-4 flex flex-col">
+          <h1 class="text-2xl font-bold">Hello, I'm Aman! 👋</h1>
+          <p class="text-gray-400">
+            I'm a passionate 16-year-old web developer from Lucknow, India, with
+            a love for creating digital experiences that matter. My journey in
+            web development started with curiosity and has grown into a deep
+            passion for building beautiful, functional applications.
+          </p>
+          <p class="text-gray-400">
+            I specialize in full-stack development, combining modern frontend
+            technologies with robust backend solutions. When I'm not coding,
+            you'll find me exploring new technologies, contributing to
+            open-source projects, or designing user interfaces that prioritize
+            both aesthetics and usability.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="h-screen flex items-center flex-col gap-10">
+      <h1 class="text-4xl font-bold">My Projects</h1>
+      <div class="grid grid-cols-2 grid-rows-4 gap-6 w-[70vw]">
+        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
+          <img src="" alt="" />
+          <h2 class="text-xl font-semibold">Project 1</h2>
+          <p class="text-gray-400">Description of project 1.</p>
+        </div>
+        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
+          <img src="" alt="" />
+          <h2 class="text-xl font-semibold">Project 2</h2>
+          <p class="text-gray-400">Description of project 2.</p>
+        </div>
+        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
+          <img src="" alt="" />
+          <h2 class="text-xl font-semibold">Project 3</h2>
+          <p class="text-gray-400">Description of project 3.</p>
+        </div>
+        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
+          <img src="" alt="" />
+          <h2 class="text-xl font-semibold">Project 4</h2>
+          <p class="text-gray-400">Description of project 4.</p>
+        </div>
+      </div>
+    </section>
     <section id="skills" class="h-screen">skills</section>
     <section id="contact" class="h-screen">contact</section>
-
-    <script>
-      const sections = document.querySelectorAll("section[id]");
-      const navLinks = document.querySelectorAll("nav > div:nth-child(2) a");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              navLinks.forEach((link) => {
-                link.classList.remove("nav-active");
-                if (link.getAttribute("href") === `#${entry.target.id}`) {
-                  link.classList.add("nav-active");
-                }
-              });
-            }
-          });
-        },
-        { threshold: 0.6 }
-      );
-
-      sections.forEach((section) => observer.observe(section));
-    </script>
+    <footer class="h-20 flex items-center justify-center">
+      <p class="text-gray-400">© 2024 Aman Verma. All rights reserved.</p>
+    </footer>
+   <script src="./src/main.js"></script>
   </body>
 </html>
