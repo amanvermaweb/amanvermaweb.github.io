@@ -13,10 +13,10 @@
   </head>
   <body class="bg-neutral-950 text-neutral-200">
     <nav
-      class="flex items-center justify-between p-4 px-10 h-[10vh] w-1/2 m-auto fixed left-0 right-0 bg-background/80 backdrop-blur-md outline rounded-4xl mt-4"
+      class="text-sm md:text-base flex items-center justify-between p-4 px-10 h-[10vh] w-[80vw] m-auto fixed left-0 right-0 bg-background/80 backdrop-blur-md outline rounded-4xl mt-4 z-10"
     >
       <div class="text-2xl font-bold"><p>Aman Verma</p></div>
-      <div class="nav-link hidden md:flex space-x-4 text-gray-400">
+      <div class="nav-link md:flex space-x-4 text-gray-400">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -24,7 +24,7 @@
         <a href="#contact"> Contact</a>
       </div>
     </nav>
-    <section id="home" class="h-screen flex items-center justify-center">
+    <section id="home" class="min-h-screen flex items-center justify-center">
       <div
         class="flex flex-col items-center justify-center gap-2 text-center p-4 md:w-[55vw]"
       >
@@ -39,11 +39,13 @@
           solutions that users love and businesses need.
         </p>
         <div class="flex gap-6 mt-4">
-          <button
+          <a
             class="bg-neutral-200 text-neutral-950 p-2.5 rounded-xl cursor-pointer"
+            href="./assets/resume.docx"
+            download="Aman_Verma_Resume.docx"
           >
             Download Resume/CV
-          </button>
+          </a>
           <a href="#contact">
             <button
               class="p-2.5 rounded-xl bg-[#181818] outline cursor-pointer"
@@ -56,19 +58,19 @@
     </section>
     <section
       id="about"
-      class="h-screen flex items-center justify-center flex-col gap-10"
+      class="min-h-screen flex items-center justify-center flex-col gap-10"
     >
       <h1 class="text-4xl font-bold">About Me</h1>
-      <div class="flex w-[70vw] justify-around">
-        <div class="w-[35vw]">
+      <div class="flex flex-col md:flex-row w-[70vw] justify-around">
+        <div class="md:w-[35vw]">
           <img
             src="./assets/me.png"
             alt="Aman Verma"
             class="rounded-full h-80 object-cover shadow-lg"
           />
         </div>
-        <div class="w-[35vw] gap-4 flex flex-col">
-          <h1 class="text-2xl font-bold">Hello, I'm Aman! 👋</h1>
+        <div class="md:w-[35vw] gap-4 flex flex-col">
+          <h1 class="text-2xl font-bold mt-4 md:mt-0">Hello, I'm Aman! 👋</h1>
           <p class="text-gray-400">
             My name is Aman Verma, a 16 year old from Lucknow, India, who is
             passionate about building websites and apps. I've been coding for
@@ -88,14 +90,21 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="h-screen flex items-center flex-col gap-10">
-      <h1 class="text-4xl font-bold">My Projects</h1>
-      <div
-        class="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-4 gap-6 w-[70vw]"
-      >
-        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
-          <img src="" alt="Chat Hive Preview" class="h-40" />
-          <h2 class="text-xl font-semibold">Chat Hive</h2>
+    <section
+      id="projects"
+      class="min-h-screen flex items-center flex-col gap-10"
+    >
+      <h1 class="text-4xl font-bold mt-4 md:mt-0">My Projects</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-[70vw]">
+        <div
+          class="bg-[#121212] p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/coming-soon.webp"
+            alt="Chat Hive Preview"
+            class="h-40 w-full object-cover"
+          />
+          <h2 class="text-xl font-semibold mt-4">Chat Hive (WIP)</h2>
           <p class="text-gray-400">
             ChatHive is a full-stack real-time chat and file-sharing web app
             designed with a sleek dark-themed UI with another dev(I built the
@@ -109,44 +118,258 @@
           <div class="flex justify-around items-center gap-4 mt-4">
             <a
               href=""
-              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 hover:bg-[#444444] transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <button class="flex gap-1 cursor-pointer">
-                <img src="./assets/live-demo.svg" alt="" />
-                <p class="text-sm text-gray-400">View Project</p>
+                <img src="./assets/live-demo.svg" alt="Live Demo Logo" />
+                <p class="text-sm">View Project</p>
               </button>
             </a>
             <a
               href=""
-              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <button class="flex gap-1 cursor-pointer">
-                <p class="text-sm text-gray-400">Github</p>
+                <img src="./assets/github.svg" alt="Github Logo" />
+                <p class="text-sm">Github</p>
               </button>
             </a>
           </div>
         </div>
-        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
-          <img src="" alt="" />
-          <h2 class="text-xl font-semibold">Tic T</h2>
-          <p class="text-gray-400">Description of project 2.</p>
+        <div
+          class="bg-[#121212] p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/tic-tac-toe-preview.jpg"
+            alt="Tic-Tac-Toe Preview"
+            class="h-40 w-full object-cover"
+          />
+          <h2 class="text-xl font-semibold mt-4">Tic-Tac-Toe</h2>
+          <p class="text-gray-400">
+            Developed a modern and visually appealing Tic Tac Toe game using
+            HTML, CSS, and JavaScript. It also has multime themes which users
+            and choose and random theme button.
+          </p>
+          <div class="flex gap-2 mt-2">
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">HTML</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">CSS</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">JavaScript</p>
+          </div>
+          <div class="flex justify-around items-center gap-4 mt-4">
+            <a
+              href="https://amanverma2009.github.io/Tic-Tac-Toe/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 hover:bg-[#444444] transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/live-demo.svg" alt="Live Demo Logo" />
+                <p class="text-sm">View Project</p>
+              </button>
+            </a>
+            <a
+              href="https://www.github.com/amanverma2009/Tic-Tac-Toe/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/github.svg" alt="Github Logo" />
+                <p class="text-sm">Github</p>
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
-          <img src="" alt="" />
-          <h2 class="text-xl font-semibold">Project 3</h2>
-          <p class="text-gray-400">Description of project 3.</p>
+        <div
+          class="bg-[#121212] p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/spotify-website-clone-preview.jpg"
+            alt="Spotify Website Clone Preview"
+            class="h-40 w-full object-cover"
+          />
+          <h2 class="text-xl font-semibold mt-4">Spotify Website Clone</h2>
+          <p class="text-gray-400">
+            Developed a Spotify website clone project featuring a sleek and
+            intuitive music player interface utilizing HTML, CSS, and
+            JavaScript.
+          </p>
+          <div class="flex gap-2 mt-2">
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">HTML</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">CSS</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">JavaScript</p>
+          </div>
+          <div class="flex justify-around items-center gap-4 mt-4">
+            <a
+              href="https://amanverma2009.github.io/Spotify-Clone/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 hover:bg-[#444444] transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/live-demo.svg" alt="Live Demo Logo" />
+                <p class="text-sm">View Project</p>
+              </button>
+            </a>
+            <a
+              href="https://www.github.com/amanverma2009/Spotify-Clone/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/github.svg" alt="Github Logo" />
+                <p class="text-sm">Github</p>
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="bg-[#121212] p-4 rounded-lg shadow-lg">
-          <img src="" alt="" />
-          <h2 class="text-xl font-semibold">Project 4</h2>
-          <p class="text-gray-400">Description of project 4.</p>
+        <div
+          class="bg-[#121212] p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/webpage-of-ai-assistant-preview.jpg"
+            alt="Webpage of AI Assistant Preview"
+            class="h-40 w-full object-cover"
+          />
+          <h2 class="text-xl font-semibold mt-4">Webpage Of AI Assistant</h2>
+          <p class="text-gray-400">
+            Developed a dynamic Web Page for an AI assistant as part of a school
+            event — 'Innovision.' by utilizing HTML, CSS, and JavaScript
+          </p>
+          <div class="flex gap-2 mt-2">
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">HTML</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">CSS</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">JavaScript</p>
+          </div>
+          <div class="flex justify-around items-center gap-4 mt-4">
+            <a
+              href="https://amanverma2009.github.io/WebPage-of-AI-Assistant/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 hover:bg-[#444444] transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/live-demo.svg" alt="Live Demo Logo" />
+                <p class="text-sm">View Project</p>
+              </button>
+            </a>
+            <a
+              href="https://www.github.com/amanverma2009/WebPage-of-AI-Assistant/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/github.svg" alt="Github Logo" />
+                <p class="text-sm">Github</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-[#121212] p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+        >
+          <img
+            src="./assets/netflix-website-clone-preview.jpg"
+            alt="Netflix Clone Preview"
+            class="h-40 w-full object-cover"
+          />
+          <h2 class="text-xl font-semibold mt-4">Netflix Website Clone</h2>
+          <p class="text-gray-400">
+            https://www.netflix.com/in/ and https://www.netflix.com/in/login
+            Netflix website clone project(design as on December 2023). These web
+            pages are linked just like on the official Netflix website using
+            HTML and CSS.
+          </p>
+          <div class="flex gap-2 mt-2">
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">HTML</p>
+            <p class="bg-[#333333] px-1.5 rounded-full text-sm">CSS</p>
+          </div>
+          <div class="flex justify-around items-center gap-4 mt-4">
+            <a
+              href="https://amanverma2009.github.io/Netflix-Clone/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 hover:bg-[#444444] transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/live-demo.svg" alt="Live Demo Logo" />
+                <p class="text-sm">View Project</p>
+              </button>
+            </a>
+            <a
+              href="https://www.github.com/amanverma2009/Netflix-Clone/"
+              class="outline bg-[#333333] p-2 px-3 flex-1/2 rounded-lg hover:scale-105 transition-transform duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="flex gap-1 cursor-pointer">
+                <img src="./assets/github.svg" alt="Github Logo" />
+                <p class="text-sm">Github</p>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <section id="skills" class="h-screen">skills</section>
-    <section id="contact" class="h-screen">contact</section>
-    <footer class="h-20 flex items-center justify-center">
-      <p class="text-gray-400">© 2024 Aman Verma. All rights reserved.</p>
+    <section id="skills" class="min-h-screen flex items-center flex-col gap-10  p-4">
+      <h1 class="text-4xl font-bold mt-4">Skills & Technologies</h1>
+      <p class="text-gray-400">
+        Here are the technologies and tools I use to bring ideas to life.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-[70vw]">
+        <div class="flex flex-col outline items-center p-4 rounded-3xl">
+          <div class="flex flex-col items-center">
+            <div class="text-4xl mb-3">🎨</div>
+            <h1 class="text-3xl font-bold h-100">Frontend</h1>
+            <div class="grid grid-cols-1">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col outline items-center p-4 rounded-3xl">
+          <div class="flex flex-col items-center">
+            <div class="text-4xl mb-3">⚡</div>
+            <h1 class="text-3xl font-bold h-100">Backend</h1>
+            <div class="grid grid-cols-1">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col outline items-center p-4 rounded-3xl">
+          <div class="flex flex-col items-center">
+            <div class="text-4xl mb-3">🛠️</div>
+            <h1 class="text-3xl font-bold h-100">Tools & Others</h1>
+            <div class="grid grid-cols-1">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center outline p-4 mt-10 rounded-3xl">
+        <h1 class="text-3xl font-semibold mb-6">Always learning and exploring new technologies...</h1>
+        <p class="text-gray-400">Currently learning Express.js, MongoDB, Next.js, and React.</p>
+      </div>
+    </section>
+    <section id="contact" class="min-h-screen">
+      <h1 class="text-4xl font-bold">Contact Me</h1>
+    </section>
+    <footer class="h-20 flex items-center justify-center p-4">
+      <p class="text-gray-400">© 2025 Aman Verma. All rights reserved.</p>
     </footer>
     <script src="./src/main.js"></script>
   </body>
