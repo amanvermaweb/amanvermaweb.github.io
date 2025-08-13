@@ -13,10 +13,10 @@
   </head>
   <body class="bg-neutral-950 text-neutral-200">
     <nav
-      class="text-sm md:text-base flex items-center justify-between p-4 px-10 h-[10vh] w-[80vw] m-auto fixed left-0 right-0 bg-background/80 backdrop-blur-md outline rounded-4xl mt-4 z-10"
+      class="text-sm md:text-base gap-8 flex items-center justify-between p-4 px-10 h-[10vh] w-[80vw] m-auto fixed left-0 right-0 bg-background/80 backdrop-blur-md outline rounded-4xl mt-4 z-10"
     >
-      <div class="text-2xl font-bold"><p>Aman Verma</p></div>
-      <div class="nav-link md:flex space-x-4 text-gray-400">
+      <div class="hidden md:block text-2xl font-bold"><p>Aman Verma</p></div>
+      <div class="nav-link md:flex space-x-4 grid grid-cols-3 gap-3 text-gray-400">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -26,7 +26,7 @@
     </nav>
     <section id="home" class="min-h-screen flex items-center justify-center">
       <div
-        class="flex flex-col items-center justify-center gap-2 text-center p-4 md:w-[55vw]"
+        class="flex flex-col items-center justify-center gap-4 md:gap-2 text-center p-4 md:w-[55vw]"
       >
         <h1 id="title" class="text-7xl md:text-9xl font-bold">Aman Verma</h1>
         <h1 class="text-3xl font-semibold">
@@ -40,13 +40,16 @@
         </p>
         <div class="flex gap-6 mt-4">
           <a
-            class="bg-neutral-200 text-neutral-950 p-2.5 rounded-xl cursor-pointer"
+            class="bg-neutral-200 text-neutral-950 p-2.5 rounded-xl cursor-pointer hover:scale-105 focus:scale-105 active:scale-95 transition-transform duration-300"
             href="./assets/resume.docx"
             download="Aman_Verma_Resume.docx"
           >
             Download Resume/CV
           </a>
-          <a href="#contact">
+          <a
+            href="#contact"
+            class="hover:scale-105 focus:scale-105 transition-transform duration-300"
+          >
             <button
               class="p-2.5 rounded-xl bg-[#181818] outline cursor-pointer"
             >
@@ -317,88 +320,123 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="min-h-screen flex items-center flex-col gap-10 p-4">
-      <h1 class="text-4xl font-bold mt-4">Skills & Technologies</h1>
-      <p class="text-gray-400">
+    <section
+      id="skills"
+      class="min-h-screen flex items-center flex-col gap-10 p-4"
+    >
+      <h1 class="text-2xl md:text-4xl font-bold mt-4">Skills & Technologies</h1>
+      <p class="text-gray-400 text-center">
         Here are the technologies and tools I use to bring ideas to life.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-[70vw]">
-        <div class="flex flex-col outline items-center p-7 rounded-3xl">
+        <div
+          class="flex flex-col outline items-center p-7 rounded-3xl hover:scale-105 transition-transform duration-300"
+        >
           <div class="flex flex-col items-center w-full gap-4">
             <div class="flex flex-col items-center gap-2.5">
               <div class="text-4xl">🎨</div>
               <h1 class="text-3xl font-bold">Frontend</h1>
             </div>
             <div class="grid grid-cols-2 gap-4 w-full">
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/html5.svg" alt="HTML Logo" />
                 <p>HTML</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/css.svg" alt="CSS Logo" />
                 <p>CSS</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/javascript.svg" alt="JS Logo" />
                 <p>JavaScript</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/react.svg" alt="React Logo" />
                 <p>React</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/tailwindcss.svg" alt="Tailwind Logo" />
                 <p>Tailwind</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col outline items-center p-7 rounded-3xl">
+        <div
+          class="flex flex-col outline items-center p-7 rounded-3xl hover:scale-105 transition-transform duration-300"
+        >
           <div class="flex flex-col items-center w-full gap-4">
             <div class="flex flex-col items-center gap-2.5">
               <div class="text-4xl">⚡</div>
               <h1 class="text-3xl font-bold">Backend</h1>
             </div>
             <div class="grid grid-cols-2 gap-4 w-full">
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/nodejs.svg" alt="Node.js Logo" />
                 <p>Node.js</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/expressjs.svg" alt="Express.js Logo" />
                 <p>Express.js</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/mongodb.svg" alt="MongoDB Logo" />
                 <p>MongoDB</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/python.svg" alt="Python Logo" />
                 <p>Python</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col outline items-center p-7 rounded-3xl">
+        <div
+          class="flex flex-col outline items-center p-7 rounded-3xl hover:scale-105 transition-transform duration-300"
+        >
           <div class="flex flex-col items-center w-full gap-4">
             <div class="flex flex-col items-center gap-2.5">
               <div class="text-4xl">🛠️</div>
               <h1 class="text-3xl font-bold">Tools & Others</h1>
             </div>
             <div class="grid grid-cols-2 gap-4 w-full">
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/git.svg" alt="Git Logo" />
                 <p>Git</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/github-skills.svg" alt="Github Logo" />
                 <p>Github</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/figma.svg" alt="Figma Logo" />
                 <p>Figma</p>
               </div>
-              <div class="flex flex-col items-center outline p-5 gap-4 rounded-lg">
+              <div
+                class="flex flex-col items-center outline p-5 gap-4 rounded-lg"
+              >
                 <img src="./assets/vscode.svg" alt="VS Code Logo" />
                 <p>VS Code</p>
               </div>
@@ -407,24 +445,157 @@
         </div>
       </div>
       <div class="text-center outline p-4 mt-10 rounded-3xl">
-        <h1 class="text-3xl font-semibold mb-2">Always learning and exploring new technologies...</h1>
-        <p class="text-gray-400 text-xl">Currently learning:- Express.js, MongoDB, Next.js, and React.</p>
+        <h1 class="text-xl md:text-3xl font-semibold mb-2">
+          Always learning and exploring new technologies...
+        </h1>
+        <p class="text-gray-400 md:text-xl">
+          Currently learning:- Express.js, MongoDB, Next.js, and React.
+        </p>
       </div>
     </section>
-    <section id="contact" class="min-h-screen flex items-center flex-col gap-10 p-4">
+    <section
+      id="contact"
+      class="min-h-screen flex items-center flex-col gap-10 p-4"
+    >
       <div class="flex flex-col items-center justify-center gap-4">
         <h1 class="text-4xl font-bold">Contact Me</h1>
-        <h1 class="text-gray-400 text-xl">
-        Let's build something cool together 👋</h1>
+        <h1 class="text-gray-400 md:text-xl">
+          Let's build something cool together 👋
+        </h1>
       </div>
-      <div class="flex">
-        <form action="">
-          <h1>Send Me a Message</h1>
-        </form>
-        <div></div>
+      <div
+        class="flex w-[70vw] md:flex-row flex-col items-center justify-center gap-10"
+      >
+        <div class="border rounded-xl p-8 w-full">
+          <div class="flex items-center gap-3 mb-6">
+            <img src="./assets/chat-icon.svg" alt="Chat Icon" />
+            <h3 class="text-xl font-semibold">Send me a message</h3>
+          </div>
+          <form
+            action="https://formspree.io/f/xblkwayy"
+            method="POST"
+            class="space-y-6"
+          >
+            <div>
+              <label for="name" class="block text-sm font-medium mb-1"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                class="w-full h-12 p-2 border border-gray-300 rounded-lg focus:border-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium mb-1"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required
+                class="w-full h-12 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium mb-1"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project or just say hi!"
+                rows="4"
+                required
+                class="w-full min-h-12 p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 cursor-pointer"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div class="space-y-6 w-full">
+          <div class="flex flex-col gap-4 outline p-8">
+            <h3 class="text-xl font-semibold">Get in Touch</h3>
+            <div class="flex gap-4">
+              <div class="bg-neutral-800 p-2 rounded-full mb-2">
+                <img src="./assets/location.svg" alt="Location Icon" />
+              </div>
+              <div>
+                <h1 class="text-gray-400">Location</h1>
+                <p>Lucknow, India</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="bg-neutral-800 p-2 rounded-full mb-2">
+                <img src="./assets/email.svg" alt="Email Icon" />
+              </div>
+              <div>
+                <h1 class="text-gray-400">Email</h1>
+                <p>amanverma.codes@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 outline p-8">
+            <h3 class="text-xl font-semibold">Follow Me</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <a
+                href="https://www.github.com/amanverma2009"
+                class="outline p-2 px-3 rounded-lg hover:scale-105 transition-transform duration-300 "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="flex gap-4 cursor-pointer">
+                  <img src="./assets/github-skills.svg" alt="Github Logo" />
+                  <p>Github</p>
+                </button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/aman-verma-dev/"
+                class="outline p-2 px-3 rounded-lg hover:scale-105 transition-transform duration-300 "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="flex gap-4 cursor-pointer">
+                  <img src="./assets/linkedin.svg" alt="Linkedin Logo" />
+                  <p>LinkedIn</p>
+                </button></a
+              >
+              <a
+                href="mailto:amanverma.codes@gmail.com"
+                class="outline p-2 px-3 rounded-lg hover:scale-105 transition-transform duration-300 "
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button class="flex gap-4 cursor-pointer">
+                  <img src="./assets/gmail.svg" alt="Gmail Logo" />
+                  <p>Email</p>
+                </button></a
+              >
+              <a
+                href="https://x.com/amanvermadev"
+                class="outline p-2 px-3 rounded-lg hover:scale-105 transition-transform duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><button class="flex gap-4 cursor-pointer">
+                  <img src="./assets/x.svg" alt="X Logo">
+                  <p>X</p>
+                  </button
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <footer class="h-10 flex items-center justify-center p-4">
+    <footer class="h-15 flex items-center justify-center p-4 bg-neutral-900">
       <p class="text-gray-400">© 2025 Aman Verma. All rights reserved.</p>
     </footer>
     <script src="./src/main.js"></script>
