@@ -7,6 +7,25 @@ p, a, li, span {
     font-family: "Inter", sans-serif;
 }
 
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.tag-row {
+    min-height: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.tag-pill {
+    white-space: nowrap;
+}
+
 .nav-active {
     @apply text-neutral-200 underline underline-offset-4 decoration-2;
   }
