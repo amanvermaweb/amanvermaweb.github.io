@@ -52,6 +52,8 @@ export default function RootLayout({ children }) {
         className="antialiased"
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
