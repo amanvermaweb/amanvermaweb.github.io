@@ -9,7 +9,7 @@ const projects = [
       "LexiconAI is an AI-powered web app similar to ChatGPT, with multiple language models via APIs for Q&A, content creation, coding assistance, and more.",
     image: "/lexicon-ai-preview.png",
     tags: ["React", "Tailwind CSS", "APIs"],
-    live: "",
+    live: "https://lexicon-ai-three.vercel.app/",
     github: "https://www.github.com/amanvermaweb/lexiconai/",
   },
   {

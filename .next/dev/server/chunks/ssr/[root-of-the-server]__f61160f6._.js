@@ -469,7 +469,7 @@ const ContactSection = ()=>{
                                             icon: link.icon,
                                             iconLight: link.iconLight,
                                             iconDark: link.iconDark,
-                                            className: "outline p-2 px-3 rounded-lg hover:scale-105 transition-transform duration-300",
+                                            className: "outline py-3 px-3 rounded-lg hover:scale-105 transition-transform duration-300",
                                             iconSize: 20
                                         }, link.label, false, {
                                             fileName: "[project]/src/app/components/sections/ContactSection.js",
@@ -555,7 +555,7 @@ const HeroSection = ()=>{
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     id: "title",
-                    className: "text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold",
+                    className: "text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold",
                     children: "Aman Verma"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/sections/HeroSection.js",
@@ -563,7 +563,7 @@ const HeroSection = ()=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-base sm:text-lg md:text-2xl font-semibold",
+                    className: "text-base sm:text-lg md:text-xl lg:text-2xl font-semibold",
                     children: "Class 10th Student | Aspiring Web Developer | Coding with Curiosity and Passion"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/sections/HeroSection.js",
@@ -571,7 +571,7 @@ const HeroSection = ()=>{
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "section-body max-w-2xl",
+                    className: "text-sm sm:text-base md:text-lg text-muted max-w-2xl",
                     children: "Passionate about creating beautiful, functional web experiences that make a difference. I blend creativity with code to build digital solutions that users love and businesses need."
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/sections/HeroSection.js",
@@ -653,7 +653,7 @@ const projects = [
             "Tailwind CSS",
             "APIs"
         ],
-        live: "",
+        live: "https://lexicon-ai-three.vercel.app/",
         github: "https://www.github.com/amanvermaweb/lexiconai/"
     },
     {
@@ -939,102 +939,115 @@ const skillGroups = [
     }
 ];
 const SkillCard = ({ group })=>{
+    const iconSize = 36;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col outline items-center p-7 rounded-3xl hover:scale-105 transition-transform duration-300",
+        className: "flex h-full flex-col outline items-center p-6 sm:p-7 rounded-3xl hover:scale-105 transition-transform duration-300",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex flex-col items-center w-full gap-4",
+            className: "flex flex-col items-center w-full gap-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col items-center gap-2.5",
+                    className: "flex flex-col items-center gap-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "text-4xl",
                             children: group.icon
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                            lineNumber: 52,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-3xl font-bold",
+                            className: "text-3xl font-bold text-center",
                             children: group.title
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                            lineNumber: 53,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                    lineNumber: 51,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-2 sm:grid-cols-3 gap-4 w-full",
+                    className: "grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 w-full",
                     children: group.items.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col items-center outline p-5 gap-4 rounded-lg",
+                            className: "flex flex-col items-center justify-center outline px-4 py-4 sm:px-5 sm:py-5 lg:px-6 lg:py-5 gap-3 rounded-lg min-h-24 md:min-h-28",
                             children: [
                                 item.iconLight && item.iconDark ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$ThemeIcon$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                     lightSrc: item.iconLight,
                                     darkSrc: item.iconDark,
                                     alt: `${item.label} Logo`,
-                                    size: 32
+                                    size: iconSize
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                                    lineNumber: 62,
+                                    lineNumber: 64,
                                     columnNumber: 17
-                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                    src: item.icon,
-                                    alt: `${item.label} Logo`,
-                                    width: 32,
-                                    height: 32,
-                                    sizes: "32px"
+                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "relative block",
+                                    style: {
+                                        width: iconSize,
+                                        height: iconSize
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                        src: item.icon,
+                                        alt: `${item.label} Logo`,
+                                        fill: true,
+                                        sizes: `${iconSize}px`,
+                                        className: "object-contain"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/components/sections/SkillsSection.js",
+                                        lineNumber: 75,
+                                        columnNumber: 19
+                                    }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                                    lineNumber: 69,
+                                    lineNumber: 71,
                                     columnNumber: 17
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-center text-[0.7rem] sm:text-sm leading-snug wrap-break-word whitespace-normal max-w-26 sm:max-w-30",
                                     children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                                    lineNumber: 77,
+                                    lineNumber: 84,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, item.label, true, {
                             fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                            lineNumber: 57,
+                            lineNumber: 59,
                             columnNumber: 13
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                    lineNumber: 55,
+                    lineNumber: 57,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/components/sections/SkillsSection.js",
-            lineNumber: 50,
+            lineNumber: 52,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/components/sections/SkillsSection.js",
-        lineNumber: 49,
+        lineNumber: 51,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
 const SkillsSection = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "skills",
-        className: "section flex items-center flex-col gap-10",
+        className: "section flex items-center flex-col gap-6 sm:gap-8",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "section-title",
                 children: "Skills & Technologies"
             }, void 0, false, {
                 fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                lineNumber: 89,
+                lineNumber: 98,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1042,32 +1055,32 @@ const SkillsSection = ()=>{
                 children: "Here are the technologies and tools I use to bring ideas to life."
             }, void 0, false, {
                 fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                lineNumber: 90,
+                lineNumber: 99,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container-page grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6",
+                className: "container-page max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6 mt-2",
                 children: skillGroups.map((group)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(SkillCard, {
                         group: group
                     }, group.title, false, {
                         fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                        lineNumber: 95,
+                        lineNumber: 104,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                lineNumber: 93,
+                lineNumber: 102,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "container-page text-center outline p-4 mt-4 rounded-3xl",
+                className: "container-page mx-auto text-center outline p-5 sm:p-6 mt-1 sm:mt-2 rounded-3xl",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-lg sm:text-xl md:text-2xl font-semibold mb-2",
+                        className: "text-lg sm:text-xl md:text-2xl font-semibold mb-2 sm:mb-3",
                         children: "Always learning and exploring new technologies..."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                        lineNumber: 99,
+                        lineNumber: 108,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1075,19 +1088,19 @@ const SkillsSection = ()=>{
                         children: "Currently learning:- TypeScript"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                        lineNumber: 102,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/sections/SkillsSection.js",
-                lineNumber: 98,
+                lineNumber: 107,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/sections/SkillsSection.js",
-        lineNumber: 88,
+        lineNumber: 97,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

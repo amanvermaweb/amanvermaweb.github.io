@@ -46,11 +46,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className="text-sm md:text-base gap-8 flex items-center justify-between p-4 px-10 h-[10vh] w-[80vw] m-auto fixed left-0 right-0 bg-nav-bg backdrop-blur-md outline rounded-4xl mt-4 z-10"
+      className="text-sm md:text-base flex items-center justify-center md:justify-between gap-6 p-4 px-6 sm:px-7 md:px-10 h-[10vh] w-[90vw] sm:w-[85vw] md:w-[80vw] m-auto fixed left-0 right-0 bg-nav-bg backdrop-blur-md outline rounded-4xl mt-4 z-10"
     >
       <div className="hidden md:block text-2xl font-bold"><p>Aman Verma</p></div>
       <div
-        className="nav-link md:flex space-x-4 grid grid-cols-3 gap-3 text-muted"
+        className="nav-link md:flex md:space-x-4 grid grid-cols-3 gap-x-5 gap-y-3 text-muted px-1"
       >
         <Link href="#home">Home</Link>
         <Link href="#about">About</Link>

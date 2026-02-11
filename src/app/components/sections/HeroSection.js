@@ -6,15 +6,15 @@ const HeroSection = () => {
       <div className="container-page flex flex-col items-center justify-center gap-4 md:gap-3 text-center">
         <h1
           id="title"
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold"
+          className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold"
         >
           Aman Verma
         </h1>
-        <h2 className="text-base sm:text-lg md:text-2xl font-semibold">
+        <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">
           Class 10th Student | Aspiring Web Developer | Coding with Curiosity
           and Passion
         </h2>
-        <p className="section-body max-w-2xl">
+        <p className="text-sm sm:text-base md:text-lg text-muted max-w-2xl">
           Passionate about creating beautiful, functional web experiences that
           make a difference. I blend creativity with code to build digital
           solutions that users love and businesses need.

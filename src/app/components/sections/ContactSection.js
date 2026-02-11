@@ -68,7 +68,7 @@ const ContactSection = () => {
                   icon={link.icon}
                   iconLight={link.iconLight}
                   iconDark={link.iconDark}
-                  className="outline p-2 px-3 rounded-lg hover:scale-105 transition-transform duration-300"
+                  className="outline py-3 px-3 rounded-lg hover:scale-105 transition-transform duration-300"
                   iconSize={20}
                 />
               ))}

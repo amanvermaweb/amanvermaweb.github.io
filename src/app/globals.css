@@ -56,7 +56,7 @@ body {
 }
 
 .container-page {
-  @apply w-full max-w-5xl mx-auto px-5 sm:px-6 lg:px-8;
+  @apply w-[90vw] lg:w-[70vw] mx-auto px-5 sm:px-6 lg:px-8;
 }
 
 .section {
