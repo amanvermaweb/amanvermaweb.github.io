@@ -4,8 +4,6 @@ This repository contains my personal developer portfolio where I showcase select
 
 The goal of this portfolio is not just presentation, but clarity in thought, clean implementation, and steady technical growth. It reflects how I approach building systems: structured, performance-aware, and continuously improving.
 
----
-
 ## Features
 
 * **Fully Responsive Design** – Consistent layout across devices
@@ -13,15 +11,11 @@ The goal of this portfolio is not just presentation, but clarity in thought, cle
 * **Project-Based Showcase** – Demonstrates practical implementation rather than theoretical summaries
 * **Iterative Development** – Updated as I refine code quality and expand technical depth
 
----
-
 ## Tech Stack
 
 * **Frontend:** Next.js, Tailwind CSS, JavaScript
 * **Core Concepts:** Responsive design, component structuring, DOM logic, performance optimization
 * **Tools:** Git, GitHub, Figma, VS Code, Lucide Icons Library
-
----
 
 ## Purpose
 
@@ -30,13 +24,9 @@ Each project reflects increasing attention to architecture, maintainability, and
 
 This repository evolves as I continue exploring full-stack systems and deeper CS fundamentals.
 
----
-
 ## License
 
 This project is licensed under the **MIT License**.
-
----
 
 ## Feedback
 
