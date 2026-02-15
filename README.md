@@ -1,28 +1,46 @@
-# Personal Portfolio Website
+# Personal Portfolio
 
-A fully responsive personal portfolio website showcasing my projects, skills, and journey as a web developer.  
-Built with **HTML**, **Tailwind CSS**, and **JavaScript**, featuring a **dark modern UI**, smooth animations, and optimized performance.
+This repository contains my personal developer portfolio where I showcase selected projects, technical skills, and ongoing work in software development.
+
+The goal of this portfolio is not just presentation, but clarity in thought, clean implementation, and steady technical growth. It reflects how I approach building systems: structured, performance-aware, and continuously improving.
+
+---
 
 ## Features
 
-- **Responsive Design** – Works seamlessly on all devices  
-- **Dark Themed UI** – Sleek, modern, and easy on the eyes  
-- **Smooth Animations** – Enhances user experience without being distracting
-- **Optimized Performance** – Fast load times and clean code
+* **Fully Responsive Design** – Consistent layout across devices
+* **Minimal Dark Interface** – Focused, distraction-free presentation
+* **Project-Based Showcase** – Demonstrates practical implementation rather than theoretical summaries
+* **Iterative Development** – Updated as I refine code quality and expand technical depth
+
+---
 
 ## Tech Stack
 
-- **Frontend:** HTML, Tailwind CSS, JavaScript  
-- **Tools:** Git, GitHub, Figma, VS Code  
+* **Frontend:** Next.js, Tailwind CSS, JavaScript
+* **Core Concepts:** Responsive design, component structuring, DOM logic, performance optimization
+* **Tools:** Git, GitHub, Figma, VS Code, Lucide Icons Library
+
+---
+
+## Purpose
+
+I built this portfolio to document my progress in computer science and software engineering.
+Each project reflects increasing attention to architecture, maintainability, and problem-solving rather than surface-level features.
+
+This repository evolves as I continue exploring full-stack systems and deeper CS fundamentals.
+
+---
 
 ## License
 
 This project is licensed under the **MIT License**.
 
+---
+
 ## Feedback
 
-I’m always looking to improve.  
-Feel free to open an issue or reach out via:
+Constructive feedback is always welcome.
 
-- Email: [amanverma.codes@gmail.com](amanverma.codes@gmail.com)
-- LinkedIn: [aman-verma-dev](https://www.linkedin.com/in/aman-verma-dev/)  
+* Email: [amanverma.codes@gmail.com](mailto:amanverma.codes@gmail.com)
+* LinkedIn: [https://www.linkedin.com/in/aman-verma-dev/](https://www.linkedin.com/in/aman-verma-dev/)
