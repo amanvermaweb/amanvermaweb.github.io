@@ -40,15 +40,6 @@ const projects = [
     github: "https://www.github.com/amanvermaweb/lexiconai/",
   },
   {
-    title: "Focus App",
-    description:
-      "Focus App is a productivity tool designed to help users stay focused. It features a minimalist interface, background music and pomodoro technique timers.",
-    image: "/focus-app-preview.png",
-    tags: ["HTML", "Tailwind CSS", "JavaScript"],
-    live: "https://amanvermaweb.github.io/focus-app/",
-    github: "https://www.github.com/amanvermaweb/focus-app/",
-  },
-  {
     title: "Coding Notes",
     description:
       "Built a public documentation website using MkDocs. Contains organized notes on all my programming skills. Features categorized sections, easy navigation, and search for learners.",
@@ -56,15 +47,6 @@ const projects = [
     tags: ["MkDocs", "Markdown"],
     live: "https://amanvermaweb.github.io/coding-notes/",
     github: "https://www.github.com/amanvermaweb/coding-notes/",
-  },
-  {
-    title: "Tic-Tac-Toe",
-    description:
-      "Developed a modern and visually appealing Tic Tac Toe game using HTML, CSS, and JavaScript. It also has multiple themes which users can choose from and a random theme button.",
-    image: "/tic-tac-toe-preview.jpg",
-    tags: ["HTML", "CSS", "JavaScript"],
-    live: "https://amanvermaweb.github.io/Tic-Tac-Toe/",
-    github: "https://www.github.com/amanvermaweb/Tic-Tac-Toe/",
   },
   {
     title: "Spotify Website Clone",
