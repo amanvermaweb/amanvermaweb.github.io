@@ -1,36 +1,17 @@
-# Personal Portfolio
+# Aman Verma | Developer Portfolio
 
-This repository contains my personal developer portfolio where I showcase selected projects, technical skills, and ongoing work in software development.
+My portfolio collects the web applications, hardware prototypes, and learning tools I’ve built. The homepage features selected work, my toolkit, and a timeline. The project archive includes category filters, project details, and links to source code and available demos.
 
-The goal of this portfolio is not just presentation, but clarity in thought, clean implementation, and steady technical growth. It reflects how I approach building systems: structured, performance-aware, and continuously improving.
+Built with Next.js App Router, React, TypeScript, and Tailwind CSS.
 
-## Features
+## Explore the portfolio
 
-* **Fully Responsive Design** – Consistent layout across devices
-* **Minimal Dark Interface** – Focused, distraction-free presentation
-* **Project-Based Showcase** – Demonstrates practical implementation rather than theoretical summaries
-* **Iterative Development** – Updated as I refine code quality and expand technical depth
+| Route | What you’ll find |
+| --- | --- |
+| `/` | Selected work, about, toolkit, timeline, and contact links |
+| `/projects/` | The full project archive |
+| `/projects/?category=hardware` | A shareable filtered view of hardware projects |
 
-## Tech Stack
+## Contact
 
-* **Frontend:** Next.js, Tailwind CSS, JavaScript
-* **Core Concepts:** Responsive design, component structuring, DOM logic, performance optimization
-* **Tools:** Git, GitHub, Figma, VS Code, Lucide Icons Library
-
-## Purpose
-
-I built this portfolio to document my progress in computer science and software engineering.
-Each project reflects increasing attention to architecture, maintainability, and problem-solving rather than surface-level features.
-
-This repository evolves as I continue exploring full-stack systems and deeper CS fundamentals.
-
-## License
-
-This project is licensed under the **MIT License**.
-
-## Feedback
-
-Constructive feedback is always welcome.
-
-* Email: [amanverma.codes@gmail.com](mailto:amanverma.codes@gmail.com)
-* LinkedIn: [https://www.linkedin.com/in/aman-verma-dev/](https://www.linkedin.com/in/aman-verma-dev/)
+[Email](mailto:amanverma.codes@gmail.com) · [GitHub](https://github.com/amanvermaweb) · [LinkedIn](https://www.linkedin.com/in/aman-verma-dev/)

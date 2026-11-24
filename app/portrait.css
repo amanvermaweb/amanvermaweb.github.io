@@ -1,0 +1,41 @@
+.av-print {
+  position:relative;
+  width:100%;
+  aspect-ratio:1;
+  isolation:isolate;
+  overflow:hidden;
+}
+.av-print-defs { position:absolute;width:0;height:0;pointer-events:none }
+.av-print-sun {
+  position:absolute;
+  z-index:-1;
+  width:88%;
+  aspect-ratio:1;
+  top:7%;
+  left:8%;
+  border-radius:50%;
+  background:var(--portrait-vermilion,#df5b35);
+  overflow:hidden;
+}
+.av-print-sun::before {
+  position:absolute;
+  content:"";
+  inset:0;
+  pointer-events:none;
+  background:radial-gradient(#241610 .65px,transparent .9px) 0 0/3px 3px;
+  opacity:.27;
+  mask-image:linear-gradient(115deg,transparent 35%,#0004 59%,#000 100%);
+}
+.av-print-person { position:absolute;inset:0; }
+.av-print-person img {
+  width:100%;
+  height:100%;
+  max-width:none;
+  display:block;
+  object-fit:fill;
+  clip-path:url(#av-portrait-contour);
+  -webkit-clip-path:url(#av-portrait-contour);
+  filter:grayscale(1) contrast(1.10) brightness(1.06);
+  user-select:none;
+  -webkit-user-drag:none;
+}
